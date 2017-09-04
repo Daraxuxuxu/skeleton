@@ -7,3 +7,12 @@ CREATE TABLE receipts (
 
   PRIMARY KEY (id)
 );
+
+CREATE TABLE tags (
+  id INT UNSIGNED AUTO_INCREMENT,
+  uploaded TIME DEFAULT CURRENT_TIME(),
+  receiptID INT UNSIGNED NOT NULL ,
+  tag VARCHAR(255),
+
+  PRIMARY KEY (id)
+);
